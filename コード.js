@@ -1,5 +1,5 @@
 /**
-* 送付URLが記載されたメールを一斉送信
+* 送信URLが記載されたメールを一斉送信
 *
 * @param None
 * @return None
@@ -9,7 +9,7 @@ function mailBroadcast() {
   const sheet = ss.getSheetByName('シート1');
   const dataRange = sheet.getDataRange();
   
-  // 名前、会社名、E-mail、送付URLの列数を取得（列数固定だと、列数が変わったときに機能しなくなるため）
+  // 名前、会社名、E-mail、送信URLの列数を取得（列数固定だと、列数が変わったときに機能しなくなるため）
   let nameIndex = 0;
   let companyNameIndex = 0;
   let emailIndex = 0;
